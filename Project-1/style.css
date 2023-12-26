@@ -28,6 +28,15 @@ html , body {
 #nav h4 {
     text-transform: uppercase;
 }
+#cursor {
+    height:200px;
+    width: 200px;
+    background-color: #92b5085a;
+    border-radius: 50%;
+    position: fixed;
+    filter:blur(50px);
+    z-index: 9;
+}
 video {
     height: 100%;
     width: 100%;
@@ -49,9 +58,10 @@ video {
     align-items: center;
     justify-content: center;
     text-align: center;
+    z-index: 10;
 }
 #page1 h1 {
-    font-size: 100px;
+    font-size: 115px;
     font-weight: 900;
     position: relative;
 }
@@ -65,16 +75,57 @@ video {
     z-index: -1;
 }
 #page1 h2 {
-    font-size: 25px;
+    font-size: 27px;
     font-weight: 800;
     margin: 10px 0px 20px 0px;
 }
 #page1 p {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
     width: 50%;
 }
 #page2 {
     height: 100vh;
     width: 100%;
+    z-index: 10;
+}
+#scroller {
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+#scroller-in {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scroller h4 {
+    display: inline-block;
+    font-size: 80px;
+    font-weight: 800;
+    margin-right: 50px;
+    color: transparent;
+    transition: all linear 0.5s; 
+    -webkit-text-stroke: 1px white ;
+}
+#scroller h4:hover {
+    color:#91B508;
+}
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
