@@ -7,6 +7,8 @@ html,body {
     width: 100%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(to left bottom,#1c1d1c,#2a2c2a);
+    color: #f1f1f1;
 }
 #main {
     position: relative;
@@ -22,17 +24,17 @@ html,body {
 #page1 {
     height: 100vh;
     width: 100vw;
-    background-color: violet;
+    position: relative;
 }
 #page2 {
     height: 100vh;
     width: 100vw;
-    background-color: indigo;
+    position: relative;
 }
 #page3 {
     height: 100vh;
     width: 100vw;
-    background-color: palevioletred;
+    position: relative;
 }
 canvas {
     position: relative;
@@ -64,7 +66,7 @@ canvas {
 }
 #loop>h1>span {
     font-weight: 300;
-    -webkit-text-stroke: 1.2px black;
+    -webkit-text-stroke: 1.2px #f1f1f1;
     color: transparent;
 }
 @keyframes anim{
@@ -92,12 +94,13 @@ canvas {
     margin: 0px 10px;
 }
 #nav>button {
-    background-color: black;
-    color: white;
-    padding: 10px;
+    background-color: #f1f1f1;
+    color: #1c1d1c;
+    font-family: 900;
+    padding: 7px 10px;
     border-radius: 5px;
     border: 0px;
-    margin: 0px 20px;
+    margin: 10px 20px;
 }
 #t1 {
     position: absolute;
@@ -123,4 +126,87 @@ canvas {
     font-size: 15px;
     font-weight: 500;
 
+}
+#left-text {
+    position: absolute;
+    top: 25%;
+    left: 10%
+}
+#left-text>h3 {
+    font-weight: 400;
+    font-size: 15px;
+    margin: 10px 0px;
+}
+#left-text>h1 {
+    font-weight: 700;
+    font-size: 35px;
+}
+#right-text {
+    position: absolute;
+    top: 55%;
+    right: 8%;
+    text-align: right;
+}
+#right-text>h3 {
+    font-weight: 400;
+    font-size: 15px;
+    margin: 10px 0px;
+}
+#right-text>h1 {
+    font-weight: 700;
+    font-size: 35px;
+}
+#text-1 {
+    position: absolute;
+    top: 25%;
+    left: 8%;
+}
+#text-1>h3 {
+    font-weight: 100;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+#text-1>h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+#text-2 {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    text-align: right;
+}
+#t2e {
+    font-size: 14px;
+}
+#t2c {
+    font-size: 16px;
+    font-weight: 600;
+}
+#l-text {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+#e {
+    font-size: 14px;
+    
+}
+#c {
+    font-size: 16px;
+    font-weight: 600;
+}
+#r-text {
+    position: absolute;
+    top: 55%;
+    right: 8%;
+    text-align: right;
+}
+#r-text>h3 {
+    font-weight: 400;
+    font-size: 15px;
+}
+#r-text>h1 {
+    font-weight: 900;
+    font-size: 40px;
 }
