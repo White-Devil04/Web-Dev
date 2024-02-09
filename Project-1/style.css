@@ -395,3 +395,15 @@ video {
 #footer #logo-img {
     height: 150px;
 }
+
+/* Media Query */
+@media print {
+    #nav {
+        display:none;
+    }
+}
+@media screen and (min-width: 768px) {
+    #page1 #arrow {
+        scale:0.7;
+    }
+}
